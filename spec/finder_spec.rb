@@ -1,12 +1,13 @@
 require('rspec')
-require('rps_game.rb')
+require('finder.rb')
 require('pry')
 
 describe('String#find') do
 
-#Find a word in the string
-
-#Replace word with second word
+#Find and replace a word in the string
+ it("Finds a word in a string and replaces it with the argument string") do
+   expect("i like hotdogs".find("hotdogs", "burgers")).to(eq("i like burgers"))
+ end
 
 #Make sure to only find and replace whole words
 
